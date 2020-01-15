@@ -2,7 +2,6 @@ import React from "react";
 import { FaPizzaSlice } from "react-icons/fa";
 
 export const Header = () => {
-  const x = 1;
   return (
     <header className="header" data-testid="header">
       <nav>
@@ -11,8 +10,8 @@ export const Header = () => {
         </div>
         <div className="settings">
           <ul>
-            <li>+</li>
-            <li><FaPizzaSlice /></li>
+            <li className="settings__add" date-testid="quick-add-task-action">+</li>
+            <li date-testid="dark-mode-action" className="settings__darkmode"><FaPizzaSlice /></li>
           </ul>
         </div>
       </nav>
